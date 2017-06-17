@@ -1,0 +1,11 @@
+layout: default
+title: my blog
+
+{{ page.title }}
+
+new arc
+
+{% for post in site.posts %}
+{{ post.date | data_to_string }} {{post.title}}
+
+{% endfor %}
